@@ -1,6 +1,10 @@
 @import 'nib'
 @import 'normalize'
 
+// Variables
+$font-size-principal = 16px
+$color-texto = green
+
 // Mixins
 // border-radius(n)
 //     -webkit-border-radius n
@@ -11,12 +15,15 @@
 //////////////////////////////
 
 body
-    font-size 16px
+    color $color-texto
+    margin 1em
+    font-size $font-size-principal
 
-.redondeado
+p.redondeado
     background red
     border 0.1em solid black
     border-radius 0.5em
-    color black
+    font-size ($font-size-principal * 2)
     &:hover
         border 0.1em red solid
+        color (($color-texto - 30%) + 60deg)

@@ -184,15 +184,18 @@ th {
   padding: 0;
 }
 body {
+  color: #008000;
+  margin: 1em;
   font-size: 16px;
 }
-.redondeado {
+p.redondeado {
   background: #f00;
   border: 0.1em solid #000;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
-  color: #000;
+  font-size: 32px;
 }
-.redondeado:hover {
+p.redondeado:hover {
   border: 0.1em #f00 solid;
+  color: #005a5a;
 }
