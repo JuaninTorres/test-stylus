@@ -19,11 +19,13 @@ body
     margin 1em
     font-size $font-size-principal
 
-p.redondeado
-    background red
-    border 0.1em solid black
-    border-radius 0.5em
-    font-size ($font-size-principal * 2)
-    &:hover
-        border 0.1em red solid
-        color (($color-texto - 30%) + 60deg)
+p
+    border 0.2em black dotted
+    &.redondeado
+        background red
+        border 0.1em solid black
+        border-radius 0.5em
+        font-size ($font-size-principal * 2)
+        &:hover
+            border 0.1em red solid
+            color (($color-texto + 30%) + 60deg)
