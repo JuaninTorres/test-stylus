@@ -1,13 +1,21 @@
-body
-    color black
-    margin 1em
-    font-size 16px
-
-p.redondeado
-    background red
-    border 0.1em solid black
-    border-radius 0.5em
-    font-size 32px
-    &:hover
-        border 0.1em red solid
-        color green
+body {
+  color: #ffa500;
+  margin: 1em;
+  font-size: 16px;
+}
+p {
+  border: 0.2em dotted #000;
+  padding: 0.3em 2em;
+  transition: all 1000ms;
+}
+p.redondeado {
+  background: #00f;
+  border: 0.2em solid #000;
+  border-radius: 4em;
+  font-size: 32px;
+}
+p.redondeado:hover {
+  border: 0.2em #f00 solid;
+  border-radius: 0;
+  color: #40b300;
+}
