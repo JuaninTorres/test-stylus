@@ -202,11 +202,15 @@ p.redondeado {
   border: 0.2em solid #000;
   -webkit-border-radius: 4em;
   border-radius: 4em;
+  -webkit-box-shadow: 0.2em 0.2em 0.4em rgba(0,0,0,0.5);
+  box-shadow: 0.2em 0.2em 0.4em rgba(0,0,0,0.5);
   font-size: 32px;
 }
 p.redondeado:hover {
+  background: #4dffff;
   border: 0.2em #f00 solid;
   -webkit-border-radius: 0;
   border-radius: 0;
   color: #40b300;
+  text-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.5);
 }

@@ -4,6 +4,7 @@
 // Variables
 $font-size-principal = 16px
 $color-texto = orange
+$color-fondo = blue
 
 // Mixins
 // border-radius(n)
@@ -24,11 +25,14 @@ p
     padding 0.3em 2em
     transition: all 1000ms
     &.redondeado
-        background blue
+        background $color-fondo
         border 0.2em solid black
         border-radius 4em
+        box-shadow 0.2em 0.2em 0.4em rgba(0,0,0,0.5)
         font-size ($font-size-principal * 2)
         &:hover
+            background (($color-fondo + 30%) - 60deg)
             border 0.2em red solid
             border-radius 0
             color (($color-texto - 30%) + 60deg)
+            text-shadow 0.1em 0.1em 0.2em rgba(0,0,0,0.5)
